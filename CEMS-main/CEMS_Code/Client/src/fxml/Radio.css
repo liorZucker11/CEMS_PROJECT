@@ -1,0 +1,16 @@
+.radio-button .radio {
+    -fx-border-color: #CCFFFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-background-color: #FFFFFF; 
+    
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #009494;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:hover .radio {
+   
+}

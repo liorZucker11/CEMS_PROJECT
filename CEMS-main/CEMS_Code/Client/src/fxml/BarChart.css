@@ -1,0 +1,30 @@
+.chart-bar {
+    
+}
+
+.chart-bar:hover {
+    -fx-bar-fill: #005580;
+}
+
+.chart-bar:selected {
+    -fx-bar-fill: #92bce3;
+}
+
+.chart-content {
+    -fx-background-color: #F8FFFF;
+    -fx-border-color: #F8FFFF;
+    
+    
+    -fx-padding: 7px;
+}
+
+.chart-title {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: black;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}

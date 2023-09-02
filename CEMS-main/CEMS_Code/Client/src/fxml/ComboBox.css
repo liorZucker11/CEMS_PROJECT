@@ -1,0 +1,36 @@
+.combo-box {
+    -fx-border-width: 1px;
+    -fx-border-color: #92bce3;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 4px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.combo-box:hover {
+    -fx-background-color: #F0F8FF;
+}
+
+.combo-box-base:hover {
+    -fx-border-color: #92bce3;
+}
+
+.combo-box .list-view {
+    -fx-border-width: 1px;
+    -fx-border-color: #92bce3;
+    -fx-background-color: #F0F8FF;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 4px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.combo-box .list-view .list-cell:filled {
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}

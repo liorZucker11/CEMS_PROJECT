@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="578.0" style="-fx-background-color: #b2cfeb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LecturerTestViewController">
+   <children>
+      <ImageView fitHeight="160.0" fitWidth="141.0" layoutX="456.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/statistics_man.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="341.0" layoutY="-98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="220.0" rotate="-41.0" style="-fx-background-color: white;" />
+      <Pane layoutX="36.0" layoutY="92.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="237.0" style="-fx-background-color: #92bce3;" />
+      <ImageView fitHeight="183.0" fitWidth="193.0" layoutX="411.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Cems-logo.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="36.0" layoutY="570.0" radius="130.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label layoutX="36.0" layoutY="37.0" text="Tests Reports">
+         <font>
+            <Font name="Comic Sans MS Bold" size="45.0" />
+         </font>
+         <effect>
+            <Lighting specularConstant="0.8" specularExponent="0.5" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="1.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color></Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="97.0" text="Select a test and click the &quot;Show Statistics&quot; button.">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="33.0" layoutY="121.0" prefHeight="363.0" prefWidth="516.0" stylesheets="@TableView.css">
+        <columns>
+            <TableColumn fx:id="selectCol" prefWidth="72.79994201660156" style="-fx-alignment: CENTER;" text="Select" />
+            <TableColumn fx:id="testCodeCol" prefWidth="75.0" text="Test Code" />
+         	<TableColumn fx:id="courseCol" prefWidth="82.40003967285156" text="Course" />
+            <TableColumn fx:id="dateCol" prefWidth="78.4000244140625" text="Date" />
+            <TableColumn fx:id="finishedCol" prefWidth="82.4000244140625" style="-fx-alignment: CENTER;" text="Active" />
+            <TableColumn fx:id="studentsStartedCol" prefWidth="121.5999755859375" style="-fx-alignment: CENTER;" text="Students Started" />
+        </columns>
+      </TableView>
+      <Button layoutX="36.0" layoutY="492.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showStatistics" prefWidth="118.0" style="-fx-background-radius: 7;" stylesheets="@Button.css" text="Show Statistics">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="433.0" layoutY="570.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backBtn" prefWidth="118.0" style="-fx-background-radius: 7;" stylesheets="@Button.css" text="Back">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

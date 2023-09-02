@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="767.0" maxWidth="972.0" minHeight="649.0" minWidth="972.0" prefHeight="767.0" prefWidth="972.0" style="-fx-background-color: #b2cfeb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateTestController">
+   <children>
+      <Pane layoutX="-35.0" layoutY="96.0" maxHeight="603.0" maxWidth="399.0" minHeight="603.0" minWidth="399.0" style="-fx-background-color: #92bce3;">
+         <children>
+            <TextField fx:id="testNumberTextField" layoutX="247.0" layoutY="389.0" promptText="01-99" style="-fx-background-color: #F8FFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #92bce3;" />
+         </children></Pane>
+      <Pane layoutX="731.0" layoutY="-101.0" maxHeight="182.0" maxWidth="220.0" minHeight="182.0" minWidth="220.0" rotate="-41.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="221.0" fitWidth="232.0" layoutX="772.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Cems-logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="541.0" layoutY="319.0" mnemonicParsing="false" onAction="#createNewQuestion" prefHeight="28.0" prefWidth="157.0" style="-fx-background-radius: 10;" stylesheets="@Button.css" text="Create New Question">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="durationTextField" layoutX="213.0" layoutY="520.0" promptText="Minutes" style="-fx-background-color: #F8FFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #92bce3;" />
+      <ImageView fitHeight="191.0" fitWidth="574.0" layoutX="423.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true" rotate="-16.5">
+         <image>
+            <Image url="@images/beautifulLineForCreateTest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="564.0" fitWidth="641.0" layoutX="-116.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" rotate="-25.2">
+         <image>
+            <Image url="@images/beautifulLineForCreateTest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="140.0" layoutX="817.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/createTest.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="57.0" layoutY="594.0" radius="130.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label layoutX="57.0" layoutY="30.0" text="Create Test">
+         <font>
+            <Font name="Comic Sans MS Bold" size="50.0" />
+         </font>
+         <effect>
+            <Lighting specularConstant="0.8" specularExponent="0.5" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="1.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color></Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="62.0" layoutY="96.0" text="Select Subject:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="subjectComboBox" layoutX="187.0" layoutY="93.0" prefWidth="150.0" promptText="Not Selected" stylesheets="@ComboBox.css" />
+      <Label layoutX="62.0" layoutY="130.0" text="Select questions, for each question selected, enter a score.">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="59.0" layoutY="155.0" onMouseClicked="#showAnswers" prefHeight="160.0" prefWidth="800.0" stylesheets="@TableView.css">
+        <columns>
+          <TableColumn fx:id="idCol" minWidth="100.0" prefWidth="100.0" text="Question ID" />
+            <TableColumn fx:id="questionTextCol" minWidth="100.0" prefWidth="450.0" text="Question Text" />
+            <TableColumn fx:id="lecturerCol" minWidth="100.0" prefWidth="120.0" text="Lecturer" />
+            <TableColumn fx:id="checkBoxCol" prefWidth="50.0" style="-fx-alignment: CENTER;" text="Select" />
+            <TableColumn fx:id="pointsCol" text="Points" />
+        </columns>
+      </TableView>
+      <Label layoutX="397.0" layoutY="323.0" text="Add a new question:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <Line endX="643.33349609375" layoutX="158.0" layoutY="476.0" startX="-100.0" />
+      <Label layoutX="57.0" layoutY="523.0" text="Duration of the test:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <Line endX="643.33349609375" layoutX="158.0" layoutY="555.0" startX="-100.0" />
+      <Label layoutX="58.0" layoutY="559.0" text="Comments for student (students can see the comments):">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <TextArea fx:id="commentsForStudentTextArea" layoutX="58.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="380.0" promptText="The students will see these comments!" style="-fx-background-color: #F8FFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #92bce3;" />
+      <Line endX="-100.0" endY="135.0" layoutX="565.0" layoutY="568.0" startX="-100.0" startY="-11.5" />
+      <Label layoutX="485.0" layoutY="559.0" text="Comments for you (students can't see the comments):">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Label>
+      <TextArea fx:id="commentsForLecturerTextArea" layoutX="486.0" layoutY="588.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="380.0" promptText="The students will not see these comments!" style="-fx-background-color: #F8FFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #92bce3;" />
+      <Button layoutX="832.0" layoutY="723.0" maxWidth="118.0" minWidth="118.0" mnemonicParsing="false" onAction="#backBtn" style="-fx-background-radius: 7;" stylesheets="@Button.css" text="Back">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="706.0" layoutY="723.0" maxWidth="118.0" minWidth="118.0" mnemonicParsing="false" onAction="#save" style="-fx-background-radius: 7;" stylesheets="@Button.css" text="Save">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="386.0" layoutY="101.0" text="Select Course:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="courseComboBox" layoutX="510.0" layoutY="93.0" prefWidth="150.0" promptText="Not Selected" stylesheets="@ComboBox.css" />
+      <Label layoutX="74.0" layoutY="320.0" text="Click on a question to preview answers.">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <VBox layoutX="74.0" layoutY="352.0" spacing="2.0">
+         <children>
+            <Label fx:id="questionLabel" text="Question">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="13.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="answer1RadioButton" mnemonicParsing="false" mouseTransparent="true" stylesheets="@Radio.css" text="Answer 1">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="answersToggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="answer2RadioButton" mnemonicParsing="false" mouseTransparent="true" stylesheets="@Radio.css" text="Answer 2" toggleGroup="$answersToggleGroup">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="answer3RadioButton" mnemonicParsing="false" mouseTransparent="true" stylesheets="@Radio.css" text="Answer 3" toggleGroup="$answersToggleGroup">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="answer4RadioButton" mnemonicParsing="false" mouseTransparent="true" stylesheets="@Radio.css" text="Answer 4" toggleGroup="$answersToggleGroup">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Label layoutX="111.0" layoutY="484.0" text="Test number:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

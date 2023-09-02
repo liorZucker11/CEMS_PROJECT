@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="457.0" maxWidth="378.0" minHeight="457.0" minWidth="378.0" style="-fx-background-color: #b2cfeb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LecturerMenuController">
+   <children>
+      <Pane layoutX="149.0" layoutY="-107.0" maxHeight="182.0" maxWidth="220.0" minHeight="182.0" minWidth="220.0" rotate="-41.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="171.0" fitWidth="175.0" layoutX="225.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Cems-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="19.0" layoutY="78.0" text="Lecturer Menu">
+         <font>
+            <Font name="Comic Sans MS Bold" size="40.0" />
+         </font>
+         <effect>
+            <Lighting specularConstant="0.8" specularExponent="0.5" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="0.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="201.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/forMenu.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-15.0" layoutY="142.0" maxHeight="292.0" maxWidth="218.0" minHeight="292.0" minWidth="218.0" style="-fx-background-color: #92bce3; -fx-background-radius: 0;">
+         <children>
+            <VBox layoutX="67.0" layoutY="16.0" prefHeight="300.0" prefWidth="168.0" spacing="10.0">
+               <children>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#createQuestion" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Create Question">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#createTest" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Create Test">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#approveGrades" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Confirm Grades">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#executeTest" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Execute Test">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#runningTest" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Running Test">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="151.0" minHeight="35.0" minWidth="151.0" mnemonicParsing="false" onAction="#reports" style="-fx-background-radius: 30 0 0 30;" stylesheets="@Button.css" text="Reports">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label fx:id="welcomeLbl" layoutX="19.0" layoutY="123.0" text="Welcome Lecturer!">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="420.0" maxWidth="118.0" minWidth="118.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-radius: 7;" stylesheets="@Button.css" text="Logout">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
+      <ImageView fitHeight="43.0" fitWidth="222.0" layoutX="-3.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/CEMS@reallygreatsystem.com.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

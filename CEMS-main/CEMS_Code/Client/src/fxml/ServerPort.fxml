@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="595.0" prefWidth="645.0" style="-fx-background-color: #b2cfeb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.ServerController">
+   <children>
+      <Pane layoutX="9.0" layoutY="77.0" prefHeight="548.0" prefWidth="240.0" style="-fx-background-color: #92bce3;" />
+      <Circle fill="WHITE" layoutX="41.0" layoutY="553.0" radius="130.0" stroke="WHITE" strokeType="INSIDE" />
+      <Pane layoutX="402.0" layoutY="-97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="220.0" rotate="-41.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="183.0" fitWidth="185.0" layoutX="478.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Cems-logo.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="226.0" layoutY="298.0" prefHeight="74.0" prefWidth="374.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rozni.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Mor.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="97.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Lior.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="97.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/dor.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="9.0" layoutY="365.0" text="Console" textFill="#00c2cb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="25.0" />
+         </font>
+         <effect>
+            <InnerShadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+      <TextArea fx:id="console" layoutX="9.0" layoutY="401.0" prefHeight="143.0" prefWidth="619.0" style="-fx-background-color: #F8FFFF; -fx-border-color: #92bce3; -fx-background-radius: 7; -fx-border-radius: 7;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="clientsTable" layoutX="269.0" layoutY="127.0" prefHeight="143.0" prefWidth="362.0" stylesheets="@../fxml/TableView.css">
+        <columns>
+          <TableColumn fx:id="clientIp" prefWidth="120.0" text="IP" />
+          <TableColumn fx:id="clientHostName" prefWidth="120.0" text="Host" />
+            <TableColumn fx:id="clientStatus" prefWidth="120.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExit" layoutX="510.0" layoutY="553.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefWidth="118.0" style="-fx-background-radius: 7;" stylesheets="@../fxml/Button.css" text="Exit">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="portxt" alignment="CENTER" layoutX="100.0" layoutY="157.0" style="-fx-background-color: #F8FFFF; -fx-border-color: #92bce3; -fx-border-radius: 7; -fx-background-radius: 7;" text="5555" />
+      <Label layoutX="9.0" layoutY="157.0" text="Port:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="9.0" layoutY="247.0" text="DB Password:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordTxt" alignment="CENTER" layoutX="100.0" layoutY="247.0" style="-fx-background-color: #F8FFFF; -fx-border-color: #92bce3; -fx-background-radius: 7; -fx-border-radius: 7;" text="yr13yr13" />
+      <Label layoutX="7.0" layoutY="24.0" text="Server Connection">
+         <font>
+            <Font name="Comic Sans MS Bold" size="50.0" />
+         </font>
+         <effect>
+            <Lighting specularConstant="0.8" specularExponent="0.5" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="1.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color green="0.7607843279838562" blue="0.7960784435272217" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="272.0" layoutY="91.0" text="Clients" textFill="#00c2cb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="25.0" />
+         </font>
+         <effect>
+            <InnerShadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+      <Button fx:id="btnConnect" layoutX="9.0" layoutY="283.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#connect" prefWidth="100.0" style="-fx-background-radius: 7;" stylesheets="@../fxml/Button.css" text="Connect">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="9.0" layoutY="127.0" text="IP:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="9.0" layoutY="187.0" text="DB Name:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="9.0" layoutY="217.0" text="DB Username:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="serverIdTxt" alignment="CENTER" layoutX="100.0" layoutY="127.0" style="-fx-background-color: #F8FFFF; -fx-border-color: #92bce3; -fx-background-radius: 7; -fx-border-radius: 7;" text="localhost" />
+      <TextField fx:id="DBNameTxt" alignment="CENTER" layoutX="100.0" layoutY="187.0" style="-fx-background-color: #F8FFFF; -fx-border-color: #92bce3; -fx-background-radius: 7; -fx-border-radius: 7;" text="cems" />
+      <TextField fx:id="DBUsernameTxt" alignment="CENTER" layoutX="100.0" layoutY="217.0" style="-fx-border-color: #92bce3; -fx-background-color: #F8FFFF; -fx-background-radius: 7; -fx-border-radius: 7;" text="root" />
+      <Button fx:id="btnDisconnect" disable="true" layoutX="116.0" layoutY="283.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#disconnect" prefWidth="100.0" style="-fx-background-radius: 7;" stylesheets="@../fxml/Button.css" text="Disconnect">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="9.0" layoutY="91.0" text="Configuration" textFill="#00c2cb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="25.0" />
+         </font>
+         <effect>
+            <InnerShadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+   </children>
+</Pane>
