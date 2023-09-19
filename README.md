@@ -35,18 +35,10 @@ The system's key objectives include:
 
 3. **Grading and Record Keeping:** After tests are completed, the system automates the grading process and securely records students' grades. This ensures accuracy and consistency in grading.
 
-![Test](CEMS-main/Screen Shot 2023-09-18 at 21.17.20.png)
-
-![Test Submitted](CEMS-main/Screen Shot 2023-09-18 at 21.17.39.png)
-
 4. **Information Processing:** The system is equipped to handle comprehensive information and data processing, including:
    - **Copy Checking:** Efficiently checking copies, identifying any irregularities, and ensuring the integrity of the assessment process.
    - **Statistical Analysis:** Generating various statistics related to tests, grades, and student performance, enabling educators and administrators to make data-driven decisions.
    - **Information Presentation:** Providing clear and insightful visualizations and reports to aid in understanding and presenting data.
-
-![Reports](CEMS-main/Screen Shot 2023-09-18 at 21.19.15.png)
-
-![Statistics](CEMS-main/Screen Shot 2023-09-18 at 21.19.29.png)
 
 ### Test Creation and Preparation
 
@@ -62,10 +54,10 @@ The system's key objectives include:
 - Lecturers construct tests with a unique identifier (6 digits), set a duration, and assign points to each question.
 - Tests may include free text instructions for examinees and lecturers.
 - The lecturer's name is recorded as the test author.
+- 
+<img width="640" alt="Screen Shot 2023-09-18 at 21 06 39" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/5e041c83-00bb-4ae4-b256-4e08aa9254f5">
 
-![Execute Test](CEMS-main/Screen Shot 2023-09-18 at 21.15.36.png)
-
-![Execute Test 2](CEMS-main/Screen Shot 2023-09-18 at 21.06.39.png)
+<img width="645" alt="Screen Shot 2023-09-18 at 21 15 36" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/72d539cd-61df-46b6-9b3e-3bf155350566">
 
 ### Test Taking
 
@@ -73,12 +65,18 @@ The system's key objectives include:
 - Tests can be taken manually (using Word files) or via the computerized interface.
 - The system measures the time allotted for each test and automatically closes it at the end.
 - The lecturer can lock a test at any time, preventing new examinees from accessing it.
+  
+<img width="1104" alt="Screen Shot 2023-09-18 at 21 17 20" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/8a0165f9-f1d8-4415-a672-38d63320b54e">
+
+<img width="375" alt="Screen Shot 2023-09-18 at 21 17 39" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/74285d75-6815-4f12-8aef-90761bb636ff">
 
 ### Test Checking
 
 - For computerized tests, the system grades exams based on predefined criteria.
 - The lecturer can review and confirm results, adding comments or manually adjusting grades.
 - Students receive their grades, checked tests, and comments via email and text messages.
+  
+<img width="374" alt="Screen Shot 2023-09-18 at 21 18 27" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/b9a80071-b912-4278-a213-67711afff3ac">
 
 ### Information Processing
 
@@ -86,6 +84,10 @@ The system's key objectives include:
 - Automated checks identify identity errors in copies and notify the lecturer.
 - Students can access their personal test scores and reviewed exams, while lecturers receive reports on tests they authored.
 - The Head of the Department receives read-only access to all data and statistical reports, helping analyze grade variations among tests and students.
+  
+<img width="508" alt="Screen Shot 2023-09-18 at 21 19 15" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/ef7ebae3-10ce-4729-b729-78f698592244">
+
+<img width="604" alt="Screen Shot 2023-09-18 at 21 19 29" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/62d37a92-55fa-4160-bae4-417aa94892b4">
 
 ### Tools and Frameworks Used
 
@@ -105,10 +107,11 @@ The system's handling of manual tests is not included in this README's definitio
 
 The Computerized Examination Management System streamlines test creation, administration, and grading, providing valuable insights and ensuring a fair and efficient assessment process within the college. For more details on specific features, please refer to the relevant sections above.
 
-![Student Menu](CEMS-main/Screen Shot 2023-09-18 at 21.07.31.png)
+<img width="373" alt="Screen Shot 2023-09-18 at 21 01 20" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/6ae32aff-56be-4125-abd0-de01d74ab339">
 
-![Lecturer Menu](CEMS-main/Screen Shot 2023-09-18 at 21.01.20.png)
+<img width="374" alt="Screen Shot 2023-09-18 at 21 07 31" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/b55ea25d-ddb5-4be7-83a3-8e33cba5fb8a">
 
-![HoD Menu](CEMS-main/Screen Shot 2023-09-18 at 21.18.27.png)
+<img width="644" alt="Screen Shot 2023-09-18 at 19 11 39" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/48d5ef53-d601-4254-8a13-c63f1ecc0df6">
 
-![Server](CEMS-main/Screen Shot 2023-09-18 at 19.11.39.png)
+
+
