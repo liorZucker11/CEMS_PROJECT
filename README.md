@@ -17,7 +17,7 @@
 
 The Computerized Examination Management System is a comprehensive computerized information system designed to centralize and streamline all aspects of test administration within a college environment. Its primary aim is to enhance the efficiency, reliability, and overall management of various types of tests conducted within the institution.
 
-![Login](CEMS-main/Screen Shot 2023-09-18 at 19.11.52.png)
+<img width="607" alt="Screen Shot 2023-09-18 at 19 11 52" src="https://github.com/morshmuel28/CEMS_PROJECT/assets/134921538/6a25ea79-ab4d-4b8c-964c-fe4decfae9f0">
 
 ### Key Objectives
 
